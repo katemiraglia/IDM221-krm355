@@ -10,17 +10,64 @@
   font-family: "Montserrat";
   src: url("fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "FreightBook";
+  src: url("fonts/Freight-Big-Pro-Book.otf") format("opentype");
+}
+@font-face {
+  font-family: "FreightItalic";
+  src: url("fonts/Freight-Big-Pro-Book-Italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "FreightBold";
+  src: url("fonts/Freight-Big-Pro-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "FreightBoldItalic";
+  src: url("fonts/Freight-Big-Pro-Bold-Italic.otf") format("opentype");
+}
 :root {
   --font-corm: "Cormorant";
   --font-corm-italic: "Cormorantitalic";
   --font-mont: "Montserrat";
+  --font-freight-i: "FreightItalic";
+  --font-freight: "FreightBook";
+  --font-freightbold: "FreightBold";
+  --font-freightbold-i: "FreightBoldItalic";
 }
 h1,
 h2 {
-  font-family: var(--font-corm);
+  font-family: var(--font-freightbold-i);
   font-weight: 700;
 }
 h3 {
-  font-family: var(--font-mont);
+  font-family: var(--font-freight);
   font-weight: 100;
+  color: white;
+  margin-bottom: 0;
+}
+h4 {
+  line-height: 1;
+  font-family: var(--font-freight-i);
+  color: white;
+  margin-top: 0;
+}
+
+.home-image-container {
+  position: relative;
+  display: inline-block;
+}
+.homepage-images {
+  max-width: 100%;
+  display: block;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-color: ;
 }
