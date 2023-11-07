@@ -44,30 +44,35 @@ h2 {
 h3 {
   font-family: var(--font-freight);
   font-weight: 100;
-  color: white;
-  margin-bottom: 0;
 }
 h4 {
   line-height: 1;
   font-family: var(--font-freight-i);
-  color: white;
-  margin-top: 0;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+}
+.left-text {
+  text-align: left;
+}
+.right-text {
+  text-align: right;
 }
 
 .home-image-container {
-  position: relative;
-  display: inline-block;
+  width: 100%;
 }
 .homepage-images {
   max-width: 100%;
-  display: block;
-}
-
-.image-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  background-color: ;
+  height: auto;
 }
