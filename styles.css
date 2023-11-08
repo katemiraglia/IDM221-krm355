@@ -26,16 +26,47 @@
   --font-freightbold: "FreightBold";
   --font-freightbold-i: "FreightBoldItalic";
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+}
+.hamburger_container {
+  margin-top: 30px;
+}
+
+.hamburger {
+  width: 20px;
+  height: 1.5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.bio-paragraph {
+  font-family: var(--font-freight);
+  background-color: #f3f6f9;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 500px;
+}
+.pull {
+  font-family: var(--font-freight-i);
+  color: blue;
+  font-size: 150%;
+}
 p {
-  font-family: var(--font-gotham);
+  font-family: var(--font-freight);
 }
 h1,
 h2 {
-  font-family: var(--font-freightbold-i);
+  font-family: var(--font-freightbold);
   font-weight: 700;
 }
+
 h3 {
-  font-family: var(--font-freight);
+  font-family: var(--font-freight-i);
   font-weight: 100;
 }
 h4 {
@@ -70,15 +101,6 @@ h4 {
   height: auto;
 }
 
-.bio-paragraph {
-  font-family: var(--font-freight);
-  background-color: #f3f6f9;
-  padding: 20px 0;
-  width: 100%;
-  max-width: 500px;
-}
-.pull {
-  font-family: var(--font-freight-i);
-  color: blue;
-  font-size: 150%;
+ul {
+  list-style: none;
 }
