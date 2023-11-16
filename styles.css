@@ -19,12 +19,25 @@
   font-family: "FreightBoldItalic";
   src: url("fonts/Freight-Big-Pro-Bold-Italic.otf") format("opentype");
 }
+@font-face {
+  font-family: "Freigeist-Medium";
+  src: url("fonts/Freigeist-Medium.ttf") format("truetype");
+}
 :root {
   --font-gotham: "Gotham";
   --font-freight-i: "FreightItalic";
   --font-freight: "FreightBook";
   --font-freightbold: "FreightBold";
   --font-freightbold-i: "FreightBoldItalic";
+  --font-logo: "Freigeist-Medium";
+  --pinkcolor: #a81576;
+  --bluecolor: #25125f;
+  --yellowcolor: #655c0a;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--yellowcolor);
 }
 header {
   display: flex;
@@ -46,16 +59,27 @@ header {
 
 .bio-paragraph {
   font-family: var(--font-freight);
-  background-color: #f3f6f9;
   padding: 20px 0;
   width: 100%;
   max-width: 500px;
+  text-align: justify;
 }
-.pull {
+.pull1 {
   font-family: var(--font-freight-i);
-  color: blue;
+  color: #a81576;
   font-size: 150%;
 }
+.pull2 {
+  font-family: var(--font-freight-i);
+  color: #655c0a;
+  font-size: 120%;
+}
+.pull3 {
+  font-family: var(--font-freight-i);
+  color: #25125f;
+  font-size: 150%;
+}
+
 p {
   font-family: var(--font-freight);
   font-size: clamp(16px, 4.8vw, 24px);
@@ -65,6 +89,8 @@ h1,
 h2 {
   font-family: var(--font-freightbold);
   font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 30px;
 }
 
 h3 {
@@ -113,7 +139,7 @@ nav {
 }
 
 nav li {
-  background-color: #a81576;
+  background-color: var(--pinkcolor);
   border: 2px solid white;
 }
 nav a {
@@ -124,10 +150,63 @@ nav a {
   color: white;
 }
 nav li:hover {
-  background-color: #25125f;
+  background-color: var(--bluecolor);
 }
 nav a:hover {
   display: block;
   padding: 10px;
   text-decoration: none;
+}
+
+a.name {
+  color: var(--bluecolor);
+  text-decoration: none;
+  font-size: large;
+}
+a.name:hover {
+  color: var(--pinkcolor);
+  text-decoration: none;
+  font-size: large;
+}
+
+a.homecategories {
+  color: var(--pinkcolor);
+  text-decoration: none;
+}
+
+a.homecategories:hover {
+  color: var(--bluecolor);
+}
+.homepage-images-container {
+  background-color: var(--bluecolor);
+  position: relative;
+  display: inline-block;
+}
+.homepage-images-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+a:hover img {
+  opacity: 0.2;
+}
+
+.overlay-text {
+  opacity: 0;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 365px;
+}
+.homepage-images-container .overlay-text:hover {
+  opacity: 1;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
