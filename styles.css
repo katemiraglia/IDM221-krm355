@@ -2,6 +2,10 @@
   font-family: "Gotham";
   src: url("fonts/Gotham Light.otf") format("opentype");
 }
+@font-face {
+  font-family: "Aktiv Grotesk";
+  src: url("fonts/AktivGrotesk-Thin.otf") format("opentype");
+}
 
 @font-face {
   font-family: "FreightBook";
@@ -25,6 +29,7 @@
 }
 :root {
   --font-gotham: "Gotham";
+  --font-aktiv: "Aktiv Grotesk";
   --font-freight-i: "FreightItalic";
   --font-freight: "FreightBook";
   --font-freightbold: "FreightBold";
@@ -61,55 +66,75 @@ hr {
   text-align: center;
 }
 .bio-paragraph {
-  font-family: var(--font-freight);
+  font-family: var(--font-aktiv);
   padding: 20px 0;
-  width: 100%;
+  width: 90%;
   max-width: 500px;
   text-align: justify;
+  line-height: 1.6;
 }
 .pull1 {
   font-family: var(--font-freight-i);
   color: #a81576;
   font-size: 150%;
+  line-height: 0.6;
 }
 .pull2 {
   font-family: var(--font-freight-i);
   color: #655c0a;
   font-size: 120%;
+  line-height: 0.6;
 }
 .pull3 {
   font-family: var(--font-freight-i);
   color: #25125f;
   font-size: 150%;
+  line-height: 0.6;
 }
 
 p {
-  font-family: var(--font-freight);
-  font-size: clamp(16px, 4.8vw, 20px);
-  width: 95%;
+  font-family: var(--font-aktiv);
+  font-size: clamp(13px, 4.8vw, 16px);
+  width: 90%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 35px auto;
 }
-
-h1,
-h2 {
-  font-family: var(--font-freightbold);
+a.km {
+  text-decoration: none;
+  font-family: var(--font-aktiv);
+}
+h1 {
+  font-family: var(--font-aktiv);
   font-weight: 700;
   margin-bottom: 0;
   margin-top: 30px;
-  width: 95%;
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2 {
+  font-family: var(--font-aktiv);
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 30px;
+  width: 90%;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
-h3 {
+h3,
+h4 {
   font-family: var(--font-freight-i);
   font-weight: 100;
+  font-size: 22px;
 }
 h4 {
-  line-height: 1;
+  line-height: 0.3;
   font-family: var(--font-freight-i);
+  font-size: 22px;
+  text-align: top;
 }
 
 .project {
@@ -120,9 +145,9 @@ h4 {
 .image-text {
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  width: 90%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 .left-text {
   text-align: left;
@@ -132,7 +157,9 @@ h4 {
 }
 
 .home-image-container {
-  width: 100%;
+  width: 90%;
+  display: block;
+  align-content: center;
 }
 .homepage-images {
   max-width: 100%;
@@ -169,13 +196,12 @@ nav a:hover {
 }
 .kateimage {
   margin: auto;
-  width: 95%;
+  width: 90%;
   align-items: center;
-  margin-top: 30px;
   display: flex;
 }
 .headercolumn {
-  margin: 20px auto;
+  margin: 30px auto;
 }
 a.name {
   color: var(--bluecolor);
@@ -191,6 +217,8 @@ a.name:hover {
 a.homecategories {
   color: var(--pinkcolor);
   text-decoration: none;
+  display: block;
+  margin-bottom: 25px;
 }
 
 a.homecategories:active {
@@ -200,6 +228,10 @@ a.homecategories:active {
   background-color: var(--bluecolor);
   position: relative;
   display: inline-block;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  width: 90%;
+  border-bottom: 10px solid #25125f;
 }
 .homepage-images-container img {
   display: block;
