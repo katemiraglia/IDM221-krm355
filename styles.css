@@ -1,8 +1,4 @@
 @font-face {
-  font-family: "Gotham";
-  src: url("fonts/Gotham Light.otf") format("opentype");
-}
-@font-face {
   font-family: "Aktiv Grotesk";
   src: url("fonts/AktivGrotesk-Thin.otf") format("opentype");
 }
@@ -28,7 +24,6 @@
   src: url("fonts/Freigeist-Medium.ttf") format("truetype");
 }
 :root {
-  --font-gotham: "Gotham";
   --font-aktiv: "Aktiv Grotesk";
   --font-freight-i: "FreightItalic";
   --font-freight: "FreightBook";
@@ -45,8 +40,19 @@
 }
 hr {
   border: 0;
-  height: 1px;
+  height: 2px;
   background-color: var(--yellowcolor);
+  width: 90%;
+}
+.betweenproject {
+  border: 0;
+  height: 0.5px;
+  background-color: var(--yellowcolor);
+  width: 90%;
+}
+header {
+  width: 95%;
+  margin: 0 auto;
 }
 .headercolumn {
   display: flex;
@@ -97,11 +103,11 @@ p {
   font-size: clamp(13px, 4.8vw, 16px);
   width: 90%;
   max-width: 800px;
-  margin: 0 auto 35px auto;
+  margin: 0 auto 15px auto;
 }
 a.km {
   text-decoration: none;
-  font-family: var(--font-aktiv);
+  font-family: var(--font-freightbold);
 }
 h1 {
   font-family: var(--font-aktiv);
@@ -116,7 +122,7 @@ h1 {
 h2 {
   font-family: var(--font-aktiv);
   font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   margin-top: 30px;
   width: 90%;
   max-width: 800px;
@@ -215,10 +221,15 @@ a.name:hover {
 }
 
 a.homecategories {
-  color: var(--pinkcolor);
+  color: wheat;
   text-decoration: none;
   display: block;
-  margin-bottom: 25px;
+  background-color: #a81576;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
 }
 
 a.homecategories:active {
@@ -231,7 +242,7 @@ a.homecategories:active {
   margin-bottom: 25px;
   box-sizing: border-box;
   width: 90%;
-  border-bottom: 10px solid #25125f;
+  border: 2px solid #25125f;
 }
 .homepage-images-container img {
   display: block;
@@ -251,6 +262,7 @@ a:hover img {
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 365px;
+  font-family: var(--font-aktiv);
 }
 .overlay-text:hover {
   opacity: 1;
