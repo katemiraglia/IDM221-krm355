@@ -50,6 +50,27 @@ hr {
   background-color: var(--yellowcolor);
   width: 90%;
 }
+.icons {
+  display: flex;
+  width: 10%;
+}
+
+.socials {
+  margin: 0 0;
+  padding: 0;
+  align-self: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact {
+  align-self: center;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  left: -10%;
+}
+
 header {
   width: 95%;
   margin: 0 auto;
@@ -58,19 +79,19 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 370px;
+  max-width: 650px;
   margin: 0 auto;
 }
-
+.hamburger_container {
+  width: 10%;
+}
 .hamburger {
   width: 20px;
   height: 1.5px;
   background-color: black;
   margin: 6px 0;
 }
-.contact {
-  text-align: center;
-}
+
 .bio-paragraph {
   font-family: var(--font-aktiv);
   padding: 20px 0;
@@ -102,7 +123,7 @@ p {
   font-family: var(--font-aktiv);
   font-size: clamp(13px, 4.8vw, 16px);
   width: 90%;
-  max-width: 800px;
+  max-width: 650px;
   margin: 0 auto 15px auto;
 }
 a.km {
@@ -115,7 +136,7 @@ h1 {
   margin-bottom: 0;
   margin-top: 30px;
   width: 90%;
-  max-width: 800px;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -125,7 +146,7 @@ h2 {
   margin-bottom: 30px;
   margin-top: 30px;
   width: 90%;
-  max-width: 800px;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -152,7 +173,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  max-width: 800px;
+  max-width: 650px;
   margin: 0 auto 10px auto;
 }
 .left-text {
