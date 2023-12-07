@@ -282,7 +282,9 @@ a:hover img {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 365px;
+
+  height: 365px;
+  width: 365px;
   font-family: var(--font-aktiv);
 }
 .overlay-text:hover {
