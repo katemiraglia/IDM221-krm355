@@ -53,6 +53,7 @@ hr {
 .icons {
   display: flex;
   width: 10%;
+  justify-content: space-between;
 }
 
 .socials {
@@ -62,13 +63,29 @@ hr {
   margin: 0 auto;
   text-align: center;
 }
+.socialicons {
+  border: none;
+}
+
 .contact {
   align-self: center;
   margin: 0 auto;
   text-align: center;
   padding: 0;
   position: relative;
-  left: -10%;
+  left: -3.5%;
+}
+.kate {
+  align-self: center;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  left: -3.5%;
+  letter-spacing: 3;
+  text-decoration: none;
+  font-family: var(--font-aktiv);
+  max-width: 650px;
+  margin: 5px auto;
 }
 
 header {
@@ -99,6 +116,24 @@ header {
   max-width: 500px;
   text-align: justify;
   line-height: 1.6;
+  background-color: white;
+}
+.headshot {
+  z-index: 100;
+  margin: 0 5%;
+}
+.bio-paragraph_contact {
+  font-family: var(--font-aktiv);
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  text-align: justify;
+  line-height: 1.6;
+  background-color: white;
+  position: relative;
+  z-index: 200;
+  border: 2px solid var(--pinkcolor);
+  margin: -50px 10% 50px 10%;
 }
 .pull1 {
   font-family: var(--font-freight-i);
@@ -124,7 +159,7 @@ p {
   font-size: clamp(13px, 4.8vw, 16px);
   width: 90%;
   max-width: 650px;
-  margin: 0 auto 15px auto;
+  margin: 20px auto 15px auto;
 }
 a.km {
   text-decoration: none;
@@ -139,12 +174,13 @@ h1 {
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 h2 {
   font-family: var(--font-aktiv);
   font-weight: 700;
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 0px;
   width: 90%;
   max-width: 650px;
   margin-left: auto;
@@ -182,15 +218,22 @@ h4 {
 .right-text {
   text-align: right;
 }
+img {
+  margin-bottom: 25px;
+}
 
 .home-image-container {
   width: 90%;
   display: block;
   align-content: center;
+  margin: 0 auto;
 }
 .homepage-images {
   max-width: 100%;
+  width: 90%;
   height: auto;
+  margin: 0 auto 25;
+  display: block;
 }
 
 ul {
@@ -203,7 +246,7 @@ nav {
 }
 
 nav li {
-  background-color: var(--pinkcolor);
+  background-color: var(--bluecolor);
   border: 2px solid white;
 }
 nav a {
@@ -221,15 +264,18 @@ nav a:hover {
   padding: 10px;
   text-decoration: none;
 }
+
 .kateimage {
   margin: auto;
   width: 90%;
   align-items: center;
   display: flex;
+  border: none;
 }
 .headercolumn {
   margin: 30px auto;
 }
+
 a.name {
   color: var(--bluecolor);
   text-decoration: none;
@@ -242,28 +288,45 @@ a.name:hover {
 }
 
 a.homecategories {
-  color: wheat;
+  color: whitesmoke;
   text-decoration: none;
   display: block;
   background-color: #a81576;
+  /* background: url("Images/150ppi/header_background.png") no-repeat; */
+  background-size: 100% 100%;
   width: 90%;
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.7;
   text-align: center;
 }
-
+.homecategories {
+  color: whitesmoke;
+  text-decoration: none;
+  display: block;
+  background-color: #a81576;
+  /* background: url("Images/150ppi/header_background.png") no-repeat; */
+  background-size: 100% 100%;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
+}
 a.homecategories:active {
   color: var(--bluecolor);
 }
 .homepage-images-container {
   background-color: var(--bluecolor);
   position: relative;
-  display: inline-block;
-  margin-bottom: 25px;
+  display: block;
+  margin: 0 auto; /* Center the container itself */
   box-sizing: border-box;
   width: 90%;
-  border: 2px solid #25125f;
+  max-width: 650px; /* Adjust this based on your layout needs */
+}
+img {
+  border: 2px solid var(--pinkcolor);
 }
 .homepage-images-container img {
   display: block;
@@ -282,7 +345,6 @@ a:hover img {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-
   height: 365px;
   width: 365px;
   font-family: var(--font-aktiv);
@@ -293,4 +355,5 @@ a:hover img {
 .homepage-images-container .overlay-text:active {
   opacity: 1;
   color: white;
+  align-content: center;
 }
