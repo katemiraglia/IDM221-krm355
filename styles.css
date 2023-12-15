@@ -38,10 +38,7 @@
 * {
   box-sizing: border-box;
 }
-section#bottom {
-  margin-top: 50px;
-  width: 100%;
-}
+
 hr {
   border: 0;
   height: 2px;
@@ -62,8 +59,6 @@ hr {
 }
 
 .socials {
-  margin: 0 0;
-  padding: 0;
   align-self: center;
   margin: 0 auto;
   text-align: center;
@@ -72,21 +67,10 @@ hr {
   border: none;
 }
 
-.contact {
-  align-self: center;
-  margin: 0 auto;
+.centertitle {
   text-align: center;
-  padding: 0;
   position: relative;
-  left: -3.5%;
-}
-.centerti {
-  align-self: center;
-  text-align: center;
-  padding: 0;
-  position: relative;
-  left: -3.5%;
-  letter-spacing: 3;
+  letter-spacing: 3px;
   text-decoration: none;
   font-family: var(--font-aktiv);
   max-width: 650px;
@@ -94,20 +78,14 @@ hr {
   color: black;
 }
 
-header {
-  width: 95%;
-  margin: 0 auto;
-}
 .headercolumn {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
   max-width: 650px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
-.hamburger_container {
-  width: 10%;
-}
+
 .hamburger {
   width: 20px;
   height: 1.5px;
@@ -131,7 +109,7 @@ header {
 .bio-paragraph_contact {
   font-family: var(--font-aktiv);
   padding: 20px;
-  width: 90%;
+
   max-width: 500px;
   text-align: justify;
   line-height: 1.6;
@@ -168,10 +146,7 @@ p {
   margin: 0 auto 25px auto;
   line-height: 1.5;
 }
-a.km {
-  text-decoration: none;
-  font-family: var(--font-freightbold);
-}
+
 h1 {
   font-family: var(--font-aktiv);
   font-weight: 700;
@@ -197,9 +172,6 @@ h4 {
 }
 h4 {
   line-height: 0.3;
-  font-family: var(--font-freight-i);
-  font-size: 22px;
-  text-align: top;
 }
 
 .project {
@@ -258,7 +230,7 @@ nav a {
   color: white;
 }
 nav li:hover {
-  background-color: var(--bluecolor);
+  background-color: var(--pinkcolor);
 }
 nav a:hover {
   display: block;
@@ -277,9 +249,7 @@ nav a:hover {
   margin: 0 auto;
   max-width: 90%;
 }
-.headercolumn {
-  margin: 30px auto;
-}
+
 .description {
   margin-top: 25px;
 }
@@ -332,17 +302,19 @@ a.homecategories:active {
   width: 90%;
   max-width: 650px;
 }
-img {
-  border: 2px solid var(--pinkcolor);
-}
 .homepage-images-container img {
   display: block;
   width: 100%;
 }
+img {
+  border: 2px solid var(--pinkcolor);
+}
+
 a:hover img {
   opacity: 0.2;
 }
 
-.homepage-images-container .overlay-text:active {
-  opacity: 1;
+section#bottom {
+  margin-top: 50px;
+  width: 100%;
 }
