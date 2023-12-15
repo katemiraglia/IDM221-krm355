@@ -161,7 +161,7 @@ p {
   font-size: clamp(13px, 4.8vw, 16px);
   width: 90%;
   max-width: 650px;
-  margin: 30px auto;
+  margin: 0 auto 25px auto;
   line-height: 1.5;
 }
 a.km {
@@ -263,16 +263,22 @@ nav a:hover {
 }
 
 .kateimage {
-  margin: auto;
+  margin: 25px auto 25px auto;
   width: 90%;
   align-items: center;
   display: flex;
   border: none;
 }
+.video {
+  margin: 0 auto;
+  max-width: 90%;
+}
 .headercolumn {
   margin: 30px auto;
 }
-
+.description {
+  margin-top: 25px;
+}
 a.name {
   color: var(--bluecolor);
   text-decoration: none;
