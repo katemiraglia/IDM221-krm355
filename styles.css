@@ -32,7 +32,7 @@
   --font-logo: "Freigeist-Medium";
   --pinkcolor: #a81576;
   --bluecolor: #25125f;
-  --yellowcolor: #655c0a;
+  --yellowcolor: #bdad1c;
 }
 
 * {
@@ -43,6 +43,7 @@ hr {
   height: 2px;
   background-color: var(--yellowcolor);
   width: 90%;
+  margin-bottom: 20px;
 }
 .betweenproject {
   border: 0;
@@ -86,6 +87,7 @@ hr {
   font-family: var(--font-aktiv);
   max-width: 650px;
   margin: 5px auto;
+  color: black;
 }
 
 header {
@@ -159,7 +161,8 @@ p {
   font-size: clamp(13px, 4.8vw, 16px);
   width: 90%;
   max-width: 650px;
-  margin: 20px auto 15px auto;
+  margin: 30px auto;
+  line-height: 1.5;
 }
 a.km {
   text-decoration: none;
@@ -168,23 +171,18 @@ a.km {
 h1 {
   font-family: var(--font-aktiv);
   font-weight: 700;
-  margin-bottom: 0;
-  margin-top: 30px;
+  margin: 50px auto 30px auto;
   width: 90%;
   max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
+
   text-align: center;
 }
 h2 {
   font-family: var(--font-aktiv);
   font-weight: 700;
-  margin-bottom: 30px;
-  margin-top: 0px;
+  margin: 50px auto 20px auto;
   width: 90%;
   max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 h3,
@@ -218,9 +216,6 @@ h4 {
 .right-text {
   text-align: right;
 }
-img {
-  margin-bottom: 25px;
-}
 
 .home-image-container {
   width: 90%;
@@ -232,8 +227,8 @@ img {
   max-width: 100%;
   width: 90%;
   height: auto;
-  margin: 0 auto 25;
   display: block;
+  margin: 0 auto 25px auto;
 }
 
 ul {
@@ -244,7 +239,9 @@ ul {
 nav {
   font-size: 150%;
 }
-
+figure {
+  margin: 0 auto;
+}
 nav li {
   background-color: var(--bluecolor);
   border: 2px solid white;
@@ -320,10 +317,10 @@ a.homecategories:active {
   background-color: var(--bluecolor);
   position: relative;
   display: block;
-  margin: 0 auto; /* Center the container itself */
+  margin: 0 auto;
   box-sizing: border-box;
   width: 90%;
-  max-width: 650px; /* Adjust this based on your layout needs */
+  max-width: 650px;
 }
 img {
   border: 2px solid var(--pinkcolor);
@@ -331,29 +328,11 @@ img {
 .homepage-images-container img {
   display: block;
   width: 100%;
-  height: auto;
 }
 a:hover img {
   opacity: 0.2;
 }
 
-.overlay-text {
-  opacity: 0;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  height: 365px;
-  width: 365px;
-  font-family: var(--font-aktiv);
-}
-.overlay-text:hover {
-  opacity: 1;
-}
 .homepage-images-container .overlay-text:active {
   opacity: 1;
-  color: white;
-  align-content: center;
 }
